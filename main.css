@@ -1,3 +1,49 @@
+/*
+style.css
+---------
+
+Par Samuel Jacquet
+*/
+
+.name
+{
+	color: grey;
+	font-size: 1.5em;
+}
+
+@font-face {
+    /*font-family: 'OpenSans-Bold';
+    src: url('police/open-sans/OpenSans-Bold.ttf') format('truetype');*/
+}
+
+body
+{
+	font-family: "Times New Roman", serif, sans-serif;
+}
+
+h1
+{
+    color: grey;
+
+}
+
+p
+{
+    color: blue;
+}
+
+footer {
+    border-top: 1px solid #d5d5d5;
+    font-size: .8em;
+}
+
+strong, em
+{
+
+}
+
+
+/*
 body {
     margin: 60px auto;
     width: 70%;
@@ -28,10 +74,6 @@ p {
     line-height: 1.4em;
     color: #333;
 }
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
-}
 
 ul.posts { 
     margin: 20px auto 40px; 
@@ -41,3 +83,4 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
+*/
