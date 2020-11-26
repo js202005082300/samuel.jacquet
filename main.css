@@ -21,7 +21,7 @@ body
 	font-family: "Times New Roman", serif, sans-serif;
 }
 
-h1
+h1, h2
 {
     color: grey;
 
@@ -29,7 +29,7 @@ h1
 
 p
 {
-    color: blue;
+    /*color: grey;*/
 }
 
 footer {
@@ -42,6 +42,82 @@ strong, em
 
 }
 
+.gantt
+{
+	display: grid;
+	grid-template-columns: repeat(25, 1fr);
+	grid-gap: 10px 0px;
+	width: 100%;
+	max-width: 1150px;
+	padding-top: 40px;
+	margin: 0 auto;
+}
+
+/* Séparations */
+span
+{
+	border-left: 1px solid lightgrey; 
+	grid-row: 1 / span 8;
+}
+ 
+span.mois_01 { grid-column: 3; }
+span.mois_02 { grid-column: 5; }
+span.mois_03 { grid-column: 7; }
+span.mois_04 { grid-column: 9; }
+span.mois_05 { grid-column: 11; }
+span.mois_06 { grid-column: 13; }
+span.mois_07 { grid-column: 15; }
+span.mois_08 { grid-column: 17; }
+span.mois_09 { grid-column: 19; }
+span.mois_10 { grid-column: 21; }
+span.mois_11 { grid-column: 23; }
+span.mois_12 { grid-column: 25; }
+
+/* Mois */
+h3
+{
+	text-align: center;
+	grid-row: 1;
+}
+ 
+h3.jan { grid-column: 1 / span 2; }
+h3.fev { grid-column: 3 / span 2; }
+h3.mar { grid-column: 5 / span 2; }
+h3.avr { grid-column: 7 / span 2; }
+h3.mai { grid-column: 9 / span 2; }
+h3.jui { grid-column: 11 / span 2; }
+h3.jul { grid-column: 13 / span 2; }
+h3.aou { grid-column: 15 / span 2; }
+h3.sep { grid-column: 17 / span 2; }
+h3.oct { grid-column: 19 / span 2; }
+h3.nov { grid-column: 21 / span 2; }
+h3.dec { grid-column: 23 / span 2; }
+
+
+/* Tâches */
+.gantt div {
+	color: white;
+	font-size: 12px;
+	padding: 10px 20px;
+	border-radius: 20px;
+}
+ 
+@media only screen and (min-width: 600px) {
+	.gantt div { 
+		font-size: 16px;
+	}
+}
+
+/* specific task styles */
+.tache_01 { background: #b03532; grid-row: 2; }
+.tache_02 { background: #33a8a5; grid-row: 3; }
+.tache_03 { background: #30997a; grid-row: 4; }
+.tache_04 { background: #6a478f; grid-row: 5; }
+.tache_05 { background: #da6f2b; grid-row: 6; }
+.tache_06 { background: #3d8bb1; grid-row: 7; }
+.tache_07 { background: #e03f3f; grid-row: 8; }
+.tache_08 { background: #59a627; grid-row: 9; }
+.tache_09 { background: #4464a1; grid-row: 10; }
 
 /*
 body {
