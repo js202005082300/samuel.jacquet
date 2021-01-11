@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>php</title>
+		<link rel="stylesheet" href="../main.css">
+	</head>
+	
+<body>
+<pre>
+<h1>Le langage php</h1>
+<h2>cours # -  Apache & PHP</h2>
+<h3>Linux</h3>
+<h4>installer serveur Apache</h4>
+sudo apt-get install apache2        (installation d'Apache)
+sudo systemctl disable apache2    (empecher le service de se lancer au démarrage de l'OS)
+sudo systemctl start apache2      (démarrer le service)
+sudo systemctl stop apache2       (couper le service)
+sudo systemctl restart apache2    (redémarrer)
+<h4>Editer nos pages web</h4>
+ls -l /var/www/html                 (tester nos droits sur ce répertoire)
+sudo chmod 755 -R /var/www/html             (accorder l'accès)
+sudo chown $USER:$USER -R /var/www/html     (devenir propriétaire)
+<h4>Installer l'interpreteur PHP</h4>
+sudo apt-get install php libapache2-mod-php (installation de PHP et du module d'Apache)
+<h4>Editer /etc/apache2/mods-enabled/php7.4.conf</h4>
+sudo vim /etc/apache2/mods-available/php7.4.conf    (éditeur, lien version 7.4)
+php_value display_errors on                         (en fin de fichier)
+<h4>Editer /etc/apache2/apache2.conf</h4>
+sudo vim /etc/apache2/apache2.conf
+<Directory /var/www/>			
+	Options Indexes FollowSymLinks
+	AllowOverride All	(None devient All, permettre .htaccess)			
+	Require all granted			
+</Directory>
+AccessFileName  .htaccess	(par défaut si tout va bien)
+<h4>Editer /etc/php/7.4/apache2/php.ini</h4>
+sudo vim /etc/php/7.4/apache2/php.ini
+error_reporting = E_ALL				(ligne 465)
+display_errors = On					(ligne 482)
+display_startup_errors = On				(ligne 493)
+html_errors = On					(ligne 552)
+default_charset = "UTF-8"				(ligne 713)
+<h4>Editer nos pages PHP</h4>
+sudo vim /var/www/html/index.php
+
+<?php
+	echo "Hello world";
+<h4>Test</h4>
+sudo systemctl start apache2
+localhost/
+localhost/monsite/					(/var/www/html/monsite/)
+sudo systemctl stop apache2
+
+<p>
+<pre>
+<code>
+
+</code>
+</pre>
+</p>
+
+<p><a href="../index.html">&laquo; Retour à l'acceuil</a></p>
+</pre>
+</body>
+	
+</html>

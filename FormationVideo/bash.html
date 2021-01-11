@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Formation GNU-Linux</title>
+		<link rel="stylesheet" href="../main.css">
+	</head>
+	
+	<body>
+		<h1>Formation GNU-Linux</h1>
+		
+		<p>Memento des Commandes Shell
+		<pre>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ echo &quot;bonjour tout le monde&quot;
+<samp>bonjour tout le monde</samp>
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ echo bonjour tout le monde
+<samp>bonjour tout le monde</samp>
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ pwd
+<samp>/home/user</samp>
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ cd ~
+<samp><b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$</samp>
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ cd ~user
+<samp><b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$</samp>
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ cd .
+<samp><b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$</samp>
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ cd ..
+<samp><b class="shell-green">user@pc</b>:<b class="shell-blue">~/home</b>$</samp>
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ cd /
+<samp><b class="shell-green">user@pc</b>:<b class="shell-blue">/</b>$</samp>
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ cd /home/user/Téléchargements
+<samp><b class="shell-green">user@pc</b>:<b class="shell-blue">~/Téléchargements</b>$</samp>
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ cd ../Musique/
+<samp><b class="shell-green">user@pc</b>:<b class="shell-blue">~/Musique</b>$</samp>
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ cd /usr/bin/
+<samp><b class="shell-green">user@pc</b>:<b class="shell-blue">/usr/bin</b>$</samp>
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ clear
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ ls
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ ls /usr/bin/
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ ls /etc
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ ls Musique
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ ls .
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ ls -l
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ ls -a
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ ls -la
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ man ls
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ man printf
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ man 1 printf
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ man ls
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ man 1 ls
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ man exit
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ man 3 exit
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ man clear
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ man man
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ file linux.txt
+<samp>linux.txt: UTF-8 Unicode text</samp>
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ mv linux.txt linux.mp3
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ file linux.mp3
+<samp>linux.mp3: UTF-8 Unicode text</samp>
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ touch rapport.odt doc.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ libreoffice Rapport.odt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ gedit doc.txt
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ mkdir /home/user/dossier
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ cp rapport.odt /home/user/dossier
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ mv ~/dossier/rapport.odt ~/Bureau/
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ mv ~/Bureau/rapport.odt ~/Bureau/VersionFinalRapport.odt
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ mkdir empty full
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ touch full/texte.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ rmdir empty
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ rmdir full
+<samp>rmdir: impossible de supprimer 'full': Le dossier n'est pas vide</samp>
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ ls -R
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ ls -R full
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ rm -R full
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ rm *.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ rm *.*
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ gedit doc.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ cat doc.txt
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ <span title="fichier des utilisateurs">cat /etc/passwd</span>
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ <span title="fichier des mots de passe">cat /etc/shadow</span>
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ <span title="fichier des groupes">cat /etc/group</span>
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ history
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ !8
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ !22
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ history -c
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ history -w
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ man history
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ chmod u+_
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ chmod g+_
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ chmod o+_
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ chmod a+_
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ chmod g+w doc.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ chmod g-w doc.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ chmod 660 doc.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ chmod 777 doc.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ chmod go-wx doc.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ chmod 755 doc.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ chmod 755 -R Musique/
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ chmod 755 -R ~
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ chown chuck doc.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ chown user:user doc.txt
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ su chuck
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ exit
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ ls -la > res.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ cat doc.txt >> res.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ cat dossier.txt 2> res.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ cat dossier.txt > ok.txt 2>> errors.log
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ cat dossier.txt > res.log 2>&1
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ ls -l > /dev/null
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ cat dossier.txt > res.txt 2> /dev/null
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ ls -l | cat doc.txt | cat dossier.txt > res.txt 2>&1
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ ls -l | cat doc.txt | cat dossier.txt >> res.txt 2>&1
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ cat < doc.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ ls -l < doc.txt > res.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ ls -l < doc.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ cat << END
+	> Bonjour
+	> tout
+	> le
+	> monde
+	> END
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ cat > fic.txt << EOF
+	> Bonjour
+	> tout
+	> le
+	> monde
+	> EOF
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ whereis python
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ whereis ls
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sudo apt install mlocate
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ mlocate.db
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ ls /var/lib/mlocate
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ locate python
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sudo updatedb
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ find -name "fic.txt"
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ find / *.conf
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ find / *.conf > out.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ find -type d -name "icon"
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ find -type f -name "icon"
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ find / -type d -name "icon"
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ find /home -size +5M
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ find %HOME -size +5M
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ man find
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ find Images -type d -name "Wallpapers"
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ find /home/user -name "*.txt"
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ grep Bonjour fic.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ grep -n bonjour fic.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ grep -r
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ grep -n -i Bonjour fic.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ grep -E ^h fic.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ grep -E ^h -n fic.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ grep -E ^b -n -i fic.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ man grep
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ grep -E ^h -n fic.txt > res.txt
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sort fic.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sort -r fic.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sort -n fic.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sort -R fic.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sort fic.txt > res.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sort fic.txt -o out.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sort -o out.txt fic.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ grep -E ^h fic.txt | sort
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ uniq out.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ uniq out.txt > res.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ uniq -c out.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ uniq -d out.txt
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ wc fic.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ wc -l fic.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ wc -w fic.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ wc -c fic.txt
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ grep -n -E ^a fic.txt | cut -d : -f 1
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ grep -n -E ^a fic.txt | cut -d : -f 2
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ cut -c 1-3 fic.txt
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ tar -cf archive.tar fic.txt out.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ tar -tf archive.tar
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ tar -xf archive.tar
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ tar -cvf archive.tar fic.txt out.txt
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ zip out.zip fic.txt out.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ unzip out.zip
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ zip out.zip main.c
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ zip -d out.zip main.c
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ zip out.zip -0 fic.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ zip out.zip -9 fic.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ zip out.zip -Z deflate fic.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ zip out.zip -Z bzip2 fic.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ zip -r out.zip dossier
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ zip -T out.zip
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ zip -e out.zip fic.txt out.txt
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sudo apt install rar
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ rar a out.rar main.c datas.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sudo apt install unrar
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ unrar x out.rar
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ rar t out.rar
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ rar r out.rar
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ rar d out.rar main.c
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ tar -cf archive.tar datas.txt main.c
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ gzip archive.tar
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ tar -zcf archive.tar.gz datas.txt main.c
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ gunzip archive2.tar.gz
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ bzip2 archive.tar
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ tar -jcf archive.tar.bz2 ./*
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ bunzip2 archive.tar.bz2
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ zcat archive.tar.gz
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ diff file1.txt file2.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ man diff
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ diff -a
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ diff -i
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sudo fdisk -l
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ cat /etc/fstab
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sudo blkid
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ <span title="Liste des montages qui ont bien été fait">cat /etc/mtab</span>
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sudo mount /dev/sbd1 cleusb
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sudo umount /dev/sdb1
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ ~$ sudo mount /dev/sdd1 media/user/cleusb
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ du Documents/
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ du -a Documents/
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sudo apt-get install exfat-fuse exfat-utils
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sudo mkfs.exfat /dev/sdc1
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sudo mkfs.exfat -n "USB-USER" /dev/sdc1
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sudo mkfs.vfat -F 32 /dev/sdc1 -n "USB-USER"
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sudo dpkg -i Téléchargements/discord-0.0.13.deb
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sudo apt-get -f install
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ <span title="liste des liens vers les dépots sur Ubuntu">cat /etc/apt/sources.list</span>
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sudo apt install gimp
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sudo aptitude update
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sudo apt-get update
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sudo apt-get install <paquet>
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sudo apt-get install gimp vlc libreoffice
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sudo apt-cache search firefox
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sudo apt-cache search firefox-locale-fr
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sudo apt-get install firefox-locale-fr
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sudo apt-get install gimp
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sudo apt-get -f install
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sudo apt-get source <paquet>
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ mkdir Téléchargements/vlc
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ cd Téléchargements/vlc
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ <span title="décommenter plusieurs deb-src">sudo nano /etc/apt/sources.list<span>
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sudo apt-get update
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sudo apt-get source vlc
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sudo chmod 755 -R ./
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sudo chown sam:sam -R ./
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sudo apt-get remove <paquet>
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sudo apt-get autoremove <paquet>
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sudo apt-get purge <paquet>
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sudo apt-get autoremove --purge <paquet>
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sudo apt-get install gimp
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ whereis gimp
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sudo apt-get remove gimp
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ whereis gimp
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sudo apt-get autoremove --purge gimp
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ whereis gimp
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ rm /home/sam/gimp-2.0/
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sudo apt-get update
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sudo apt-get upgrade
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sudo apt-get dist-upgrade
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sudo add-apt-repository ppa:<dépot>
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sudo add-apt-repository ppa:jonathonf/vlc
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sudo apt-get update
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sudo apt-get install <paquet>
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sudo add-apt-repository --remove ppa:<dépot>
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ dpkg -i_
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ dpkg -r_
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ dpkg -p_
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ dpkg --force-all --purge
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sudo apt install deborphan
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ deborphan
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sudo apt-get remove $(deborphan)
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sudo apt-get autoclean
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sudo apt-get clean
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ <span title="Emplacement des archives">cd /var/cache/apt/archives</span>
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ nano doc.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ <span title="fichier de configuration">cat /etc/nanorc</span>
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ nano -B doc.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ nano -l doc.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ nano -lB doc.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ nano -L doc.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ nano -m doc.txt
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ nano -lL main.c
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ nano -E main.c
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ nano -T 4 main.c
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ nano -i main.c
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ cat > /home/sam/.nanorc << EOF
+	set mouse
+	set autoindent
+	EOF
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$ sudo nano /etc/nanorc
+		</code>
+		<code class="linux">
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$
+<b class="shell-green">user@pc</b>:<b class="shell-blue">~</b>$
+		</code>
+		</pre>
+		</p>
+
+<pre>
+	## Commandes diverses
+	- [ ] Environnement Linux
+	* ctrl+H 				(afficher les fichiers cachés)
+	* lsb_release -a			(Version distribution)
+	* sudo -i				(Passer en ROOT)
+	* ctrl+D				(Sortir du mode ROOT)
+	* su					(Passer en Super-Utilisateur)
+	* javac 				(tester l'installation du JDK)
+	* java -version 			(tester la version)
+	* g++ --version 			(vérifier la version)
+	* python3
+	
+	- [ ] rm
+	* rm <file>				(Supprimer un fichier)
+	* rm -r <folder>			(Supprimer un dossier)
+	
+	- [ ] imagemagick
+	* import -window root Images/screenshot.png
+	* import Bureau/Partage/snap.png 			(screenshot d'une selection)
+	* import -window root -pause # Bureau/Partage/fileName.png 	(# = compte à rebours en seconde)
+	
+	- [ ] icoutils
+	* icon.sh                           	(Bash shell - ksh)
+	* rm *.ico                          	(supprimer tout les .ico)
+	
+	- [ ] youtube-dl
+	* youtube-dl -x --audio-format mp3 url_de_la_vidéo	(extension mp3)
+	* youtube-dl -F 22 url_de_la_vidéo			(extension mp4 1280x720 [best])
+	
+	- [ ] Vim
+	* i                                 	(insertion)
+	* :w                                	(sauver)
+	* :q                                	(quitter)
+	* :wq (ou :x)                       	(sauver et quitter)
+	* :q!                               	(quitter et annuler)
+	* /texte (ou ?texte)                	(rechercher texte)
+	* n                                 	(occurence précédente)
+	* N                                 	(occurence suivante)
+	* :%s/ancien-mot/nouveau-mot/g	(remplacer ancien-mot par nouveau-mot)
+</pre>
+
+		<p><a href="../index.html">&laquo; Retour à l'acceuil</a></p>
+	</body>
+	
+</html>
