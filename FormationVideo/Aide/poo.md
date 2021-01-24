@@ -1,5 +1,5 @@
 # [AIDE - programmation orientée-objet](https://youtu.be/5j5z9BJCAW8)
-@jasonchampagne
+@https://github.com/jasonchampagne
 
 ## Paradigme = façon de coder. 
 
@@ -28,7 +28,7 @@ La première question à se poser : De quoi est compose un forum ? C'est compos�
 
 ![Forum de discussion](poo/Image1.png)
 
-	+---------------------------+
+	<!-- +---------------------------+
 	|Forum de discussion		|
 	|							|
 	|	Utilisateur				|
@@ -36,7 +36,7 @@ La première question à se poser : De quoi est compose un forum ? C'est compos�
 	|		Message				|
 	|Rangs						|
 	|			Catégories		|
-	+---------------------------+
+	+---------------------------+ -->
 	
 En effet, le forum de discussion va gérer des utilisateurs, c'est une entité propre à notre forum.
 
