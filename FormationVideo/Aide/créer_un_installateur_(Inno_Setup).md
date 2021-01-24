@@ -11,7 +11,7 @@ Télécharger ici.
 
 Récupérer l'exe : Downloads -> Stable Release -> Random site.
 
-    Note : passer un png dans un convertisseur .ico en ligne.
+Note : passer un png dans un convertisseur .ico en ligne.
 
 Démarrer Inno Setup Compiler :
 
@@ -34,7 +34,7 @@ Démarrer Inno Setup Compiler :
 
 1. Spécifier les raccourcis : "Application Shortcuts" > "Create an Internet Shortcut in the start menu folder" si on a renseigné un site au début de la configuration OU "Create an Uninstall Shortcut in the start menu folder" si on veut créer un désinstalleur dans le menu démarrer -> Next.
 
-    Note : éviter d'abuser des raccourcis bureau.
+Note : éviter d'abuser des raccourcis bureau.
 
 1. Application documentation, c'est comment on veut distribuer notre programme (payant, gratuit, open source, etc.) :
 
