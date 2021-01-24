@@ -1,12 +1,12 @@
-AIDE - écrire un Makefile (Make)
+# AIDE - écrire un Makefile (Make)
 24-01-21
 
 Un Makefile est simplement un fichier que nous allons écrire et qui servira pour ceux qui utilisent des langages compilés comme le C ou le C++ afin de faciliter le développement sur des projets conséquents.
 C'est le cas sur des projets où l'on organise tout sur plusieurs fichiers lorsqu'on fait de la programmation modulaire.
 
-1.	INSTALLATION
+## INSTALLATION
 
-1.1	Linux
+### Linux
 
 Pour pouvoir utiliser ce fichier, il faut télécharger l'outil Make. Normalement l'outil Make est intégré par défaut sur le système d'exploitation, il est en natif. Tant qu'on n'a pas de message pour dire que la commande Make est introuvable ou inconnu, c'est qu'à priori Make est installé.
 
@@ -20,13 +20,13 @@ Pour les distributions comme ubuntu, Debian, Linux Mint, etc. on peut installer 
 
 Ça c'est pour ceux qui sont sur GNU-Linux et MacOS.
 
-1.2	Installation Windows
+### Installation Windows
 
 Pour Windows, c'est différent, il n'est pas installé en natif, il n'existe pas.
 
 Il faut l'installer.
 
-1.2.1	Pour cela il faut se rendre sur gnuwin32.sourceforge.net/packages/make.htm
+* Pour cela il faut se rendre sur gnuwin32.sourceforge.net/packages/make.htm
 
 Cela pour partir sur la bonne source parce qu'il y a plusieurs moyens d'avoir l'outil Make sur Windows pour éviter les problèmes à l'installation est à l'utilisation.
 
@@ -37,7 +37,7 @@ On commence par rechercher le setup qui va nous rediriger vers le site de Source
 
 Au moment où je suis la vidéo, il me propose la version 3.81.
 
-1.2.2	Ensuite on l'installe. 
+* Ensuite on l'installe. 
 
 On accepte les conditions. On voit où sera présent l'outil C:\Program Files (x86)\GnuWin32
 
@@ -45,7 +45,7 @@ On laisse tout par défaut. A la fin si c'est déjà installé, il va proposer d
 
 On fait install est c'est terminé. C'est vraiment très simple.
 
-1.2.3	Modifier les variables d'environnement
+* Modifier les variables d'environnement
 
 C'est comme pour l'installation de MinGW pour le compilateur gcc ou d'autres compilateurs sur Windows.
 
@@ -69,7 +69,7 @@ Il suffit alors d'ajouter le chemin C:\Program Files (x86)\GnuWin32\bin et de v�
 
 On valide le tout avec Ok.
 
-1.2.4	Vérifier l'installation
+* Vérifier l'installation
 
 Normalement, si on tape Make sur l'invité de commandes Windows, on devrait obtenir le message :
 
@@ -80,7 +80,7 @@ Normalement, si on tape Make sur l'invité de commandes Windows, on devrait obte
 
 Finalement, il attend une cible, un fichier Makefile à interpréter.
 
-1.3	Créer un Makefile
+## Créer un Makefile
 
 Le but de cette vidéo est d'apprendre à écrire un Makefile.
 
@@ -101,6 +101,7 @@ La création d'un Makefile n'est pas compliquée, c'est quelque chose de très l
 Le principe tel qu'on a pu le voir dans le langage C ou en C++, nous avons deux fichiers sources et un fichier d'en-tête sur lequel on va utiliser le Makefile.
 
 Sans Makefile, pour tester ce programme, nous devons faire :
+
     cd ...
     gcc *.c -o prog
     prog
@@ -139,7 +140,7 @@ On aura plein de cibles différentes avec des dépendances qui leurs corresponde
     <cible> : <dependances>
         <commande>
 
-1.3.1	Création d'une cible (main.o)
+* Création d'une cible (main.o)
 
 On a vu dans les étapes de compilation (Séance 3 en Hacking) que l'on va créer des fichiers objets, avec des extensions o, à partir de fichiers sources.
 
@@ -152,7 +153,7 @@ Pour partir de main.c pour obtenir main.o, on fait tout simplement gcc -o pour c
 
 Pour créer main.o, il a besoin de la dépendance main.c donc il faut qu'un fichier main.c existe. Et à partir de main.c, il va transformer cela en fichier objet main.o
 
-1.3.2	Obtenir player.o
+* Obtenir player.o
 
 On fait ensuite la même chose pour player. 
 player.o, sa dépendance c'est player.c et la commande pour faire le tout c'est gcc -o player.o -c player.c
@@ -160,7 +161,7 @@ player.o : player.c
 
     gcc -o player.o -c player.c
 
-1.3.3	Obtenir le résultat (prog)
+* Obtenir le résultat (prog)
 
 Par habitude on le met au-dessus du fichier. Ce que l'on veut obtenir à la fin, c'est le prog.exe sur Windows ou prog sur Linux ou Mac. 
 
@@ -181,7 +182,7 @@ Donc après "prog : main.o player.o", on fait gcc -o prog suivi de l'ensemble de
     player.o : player.c
         gcc -o player.o -c player.c
 
-1.4	Lecture du Makefile
+## Lecture du Makefile
 
 Comment va se passer la lecture du Makefile ?
 
@@ -252,7 +253,7 @@ La commande va recréer les fichiers objets pour main et pour player et elle va 
 
 Elle va reproduire l'ensemble du projet, ce qui va être lourd, beaucoup plus lent qui fait gaspiller des ressources.
 
-1.5	Mais si on change le code source ?
+## Mais si on change le code source ?
 
 Par exemple si on change le code source de main.c et qu'on réexécute la commande make, on n'a plus que deux lignes. 
 
@@ -270,11 +271,11 @@ Jusqu'ici nous avons vu la base en Makefile (18.42).
 
 C'est le minimum à savoir sur le Makefile si l'on crée plusieurs fichiers et que l'on fait de la programmation modulaire. 
 
-1.6	Règles spéciales
+## Règles spéciales
 
 Créer un Makefile, c'est préciser un ensemble de règles. Une règle dans un Makefile se décompose en 3 parties : une <cible> dont il y a des <dépendances> et si ces <dépendances> sont satisfaites, on peut exécuter une <commande>.
 
-1.6.1	Règle all
+* Règle all
 
 Au niveau du Makefile, il existe des règles un peu spéciales qui sont facilement réutilisables au niveau du fichier. Une règle permet de faire l'ensemble pour créer notre exécutable qui est l'objectif final de notre programme.
 
@@ -313,7 +314,7 @@ Cette règle "all" est plutôt pratique parce qu'elle permet de ne pas trop se s
 
 Il est recommandé de mettre toujours un "all" au départ et de mettre la cible que l'on veut. La cible finale, c'est notre exécutable.
 
-1.6.2	Règle clean
+* Règle clean
 
 Cette règle se met plutôt vers la fin.
 
@@ -334,7 +335,7 @@ Pour exécuter cette commande, on utilisera la "make clean".
 
 Sur Windows, ce sera avec des slashs. Il suffira d'adapter en fonction de l'OS pour avoir une commande de nettoyage.
 
-1.6.3	Règle mrproper
+* Règle mrproper
 
 Par habitude, on peut avoir également mrproper.
 
@@ -353,7 +354,7 @@ Pour Linux, c'est toujours pareil mais du coup ici ce serait prog.
 
 Et là, il suffira de faire "make mrproper".
 
-1.6.4	Règle zip
+* Règle zip
 
 On peut également créer une commande zip si on veut se créer une archive. 
 
@@ -386,7 +387,7 @@ On crée ainsi nos propres arguments pour le programme make. C'est make suivi du
 
     zip :
 
-1.7	Créer une variable en Makefile
+## Créer une variable en Makefile
 
 On a vu la ma base mais comme on a pu le faire, on note toujours les choses en dur (main.c, player.c, main.o, player.o). Dans un projet avec 500 fichiers, on se voit mal noter 500 noms de fichiers objets.
 
@@ -424,9 +425,9 @@ On note :
 
 Pas besoin de doubles quottes.
 
-1.8	Utiliser une variable dans un Makefile
+## Utiliser une variable dans un Makefile
 
-1.8.1	La variable CC
+*	La variable CC
 
 On met un dollar, des parenthèses dans lequel on met le nom de la variable.
 
@@ -451,7 +452,7 @@ Le jour où je veux changer de compilateur, je n'ai qu'à changer de nom de comp
 
 Ça permet de gagner beaucoup de temps. C'est mieux d'utiliser des variables pour obtenir quelque chose de plus dynamique. 
 
-1.8.2	La variable EXEC
+* La variable EXEC
 
 On fait pareil avec notre exécutable. 
 A chaque fois que l'on fait référence au nom de l'exécutable on utilisera la notation : $(EXEC).
@@ -475,7 +476,7 @@ Voilà comment on peut rendre les choses plus dynamiques.
     player.o : player.c
         $(CC) -o player.o -c player.c
 
-1.9	Le manuel
+## Le manuel
 
 On peut utiliser le manuel du Makefile.
 
@@ -483,13 +484,13 @@ On peut utiliser le manuel du Makefile.
 
 L'outil Make est un outil très puissant et offre tout un tas de possibilités.
 
-1.10	Les variables spéciales
+## Les variables spéciales
 
 C'est beaucoup moins explicite qu'un nom de variable et pas facile à utiliser. 
 
 Par exemple EXECUTABLE est un nom plus explicite que EXEC. Les variables spéciales n'ont pas des noms explicites. 
 
-1.10.1	La variable $@
+* La variable $@
 
 C'est une variable qui représente le nom de la cible. Elle fait référence à la cible.
 
@@ -502,23 +503,23 @@ Ici elle représente la cible par rapport à la commande associée. La cible $@ 
 
 @ est le nom de la cible.
 
-1.10.2	La variable $<
+* La variable $<
 
 C'est le nom de la première dépendance.
 
-1.10.3	La variable $^
+* La variable $^
 
 C'est la liste des dépendances. Plusieurs dépendances.
 
-1.10.4	La variable $?
+* La variable $?
 
 C'est la liste des dépendances mais plus récentes que la cible.
 
-1.10.5	La variable $*
+* La variable $*
 
 C'est le nom du fichier, sans son extension.
 
-1.11	Généralisation du Makefile
+## Généralisation du Makefile
 
 On essaye de rendre notre Makefile plus dynamique, c’est-à-dire ne pas avoir des noms marqués en dur comme main ou player.
 
@@ -537,7 +538,7 @@ Ainsi au lieu d'écrire ces deux lignes là, on aimerait en écrire une seule. A
 
 "%.o : %.c" signifie que toutes les cibles .o, je vais les écrire à partir de toutes les dépendances sources .c, avec l'extension c. Et de là on pourrait créer nos différents objets mais là ça ne va pas encore, il faut aussi créer une variable …
 
-1.11.1	La variable SRC
+* La variable SRC
 
 On va utiliser une variable SRC et utiliser un cas particulier en sachant que pour le Makefile pour dire tout, on utilise le joker % donc pour retrouver l'étoile de Windows ou Linux quand on faisait par exemple "gcc *.c", on est obligé d'utiliser un mot clé spéciale du Makefile qui est willcard, à l'intérieur de $() parce que c'est une variable particulière.
 
@@ -568,7 +569,7 @@ Donc pour éviter d'ajouter à chaque fois tous les noms des fichiers sources da
 
 Donc pour la variable des fichiers sources, on fait "SRC = $(wildcard *.c)" pour que notre code soit très générique et fonctionne dans pratiquement tous les projets. Cette variable va prendre tous les codes sources.
 
-1.11.2	La variable OBJ
+* La variable OBJ
 
 Pour les objets, on dit que nous prenons notre variable SRC sauf que l'on met deux points car c'est la syntaxe au niveau du Makefile et tout les fichiers en .c, ils n'ont pas cette extension, à la place ils ont l'extension en .o
 
@@ -594,7 +595,7 @@ Et maintenant, on peut faire cette commande sans problème :
     %.o : %.c
         $(CC) -o $(OBJ) -c $(SRC)
 
-    Mais maintenant comment allons-nous remplir la partie en jaune fluo, "main.o player.o". Cette partie rassemble la liste de nos fichiers objets représentées par la variable OBJ.
+Mais maintenant comment allons-nous remplir la partie en jaune fluo, "main.o player.o". Cette partie rassemble la liste de nos fichiers objets représentées par la variable OBJ.
 
 $(OBJ) va permettre de lister l'ensemble de nos fichiers objets à partir de nos fichiers sources, lister par $(wildcard *.c) qui nous fera gagner du temps avec les objets.
 
@@ -619,7 +620,7 @@ On a des fichiers qui dépandent d'autres si il utilise main avant player, ca ne
 
 C'est pourquoi, on recommande d'utiliser les petites variables spéciales pour être sûr. 
 
-1.11.3	Utilisation des variables spéciales
+## Utilisation des variables spéciales
 
 On voit que l'on a un problème à la compilation, on décide donc d'utiliser les variables spéciales.
 
@@ -639,33 +640,33 @@ On voit que l'on a un problème à la compilation, on décide donc d'utiliser le
         $(CC) -o $(EXEC) $(OBJ)
 
 $(OBJ) est notre cible et nous allons la remplacer par $@. 
-
+´´´
 +-------------------------------+---------------------------+
 |%.o : %.c                      | %.o : %.c                 |
 |   $(CC) -o $(OBJ) -c $(SRC)   |   $(CC) -o $@ -c $(SRC)   |
 +-------------------------------+---------------------------+
-
+´´´
 $(SRC) est la première dépendance donc la source en fonction. Donc si on a main.o, on va pas essayer de le créer avec player.c. Ca risque d'être problématique, on va le créer avec la variable de même nom, main.c, avec une autre extension. On met à la place $<. Ça permettra de gérer au mieux la priorité de la création des fichiers objets.
-
+´´´
 +-------------------------------+---------------------------+
 |%.o : %.c                      | %.o : %.c                 |
 |   $(CC) -o $@ -c $(SRC)       |   $(CC) -o $@ -c $<       |
 +-------------------------------+---------------------------+
-
+´´´
 Au niveau de l'exécutable, comme les $(EXEC) sont identique, on peut remplacer la cible de la commande par $@.
-
+´´´
 +-------------------------------+---------------------------+
 |$(EXEC) : $(OBJ)               | $(EXEC) : $(OBJ)          |
 |   $(CC) -o $(EXEC) $(OBJ)     |   $(CC) -o $@ $(OBJ)      |
 +-------------------------------+---------------------------+
-
+´´´
 Pour la liste des objets (main.o, player.o, etc), ce n'est plus dollar inférieur à mais dollar accent circonflexe $^. C'est la liste des dépendances.
-
+´´´
 +-------------------------------+---------------------------+
 |$(EXEC) : $(OBJ)               | $(EXEC) : $(OBJ)          |
 |   $(CC) -o $@ $(OBJ)          |   $(CC) -o $@ $^          |
 +-------------------------------+---------------------------+
-
+´´´
 Cela nous donne :
 
     makefile
@@ -702,7 +703,7 @@ Mais grâce aux variables spéciales, nous n'avons même plus besoin de s'embêt
 
 Cette syntaxe très générique va permettre de lancer l'éxécution avec la commande "make" ou "make all".
 
-1.12	Conditions
+## Conditions
 
 Ca ne fonctionne pas vraiment comme dans un langage de programmation.
 Par exemple, une variable SYSTEME, WINDOWS ou LINUX.
@@ -749,7 +750,7 @@ On peut également utiliser ifdef pour dire que quelque chose est défini pour g
 
 Il faut faire attention à ne pas trop en abuser autrement ça risque de compliquer notre Makefile. Surtout si on mélange les conditions, les variables spéciales, etc. Il faut avoir quelque chose de très simple et utilisable.
 
-1.13	Conclusion 
+## Conclusion 
 
 On a vu le code de base.
 On a vu les variables spéciales.
