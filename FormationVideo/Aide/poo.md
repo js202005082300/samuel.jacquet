@@ -27,7 +27,7 @@ Factorisation de codes -> fonctions/procédures (On les différencie du fait que
 Le problème de base est divisé en sous-partie. Exemple : Lorsqu'on développe un Forum pour un site web, on risque vite de s'emmêler les pinceaux malgré plusieurs fichiers et des fonctions pour éviter les répétitions. C'est pour ça qu'on a inventer la POO.
 
 La première question à se poser : De quoi est compose un forum ? C'est composé d'entités et de concepts : Utilisateur, Sujet, Message, Rangs, Catégories.
-
+```
 	+---------------------------+
 	|Forum de discussion		|
 	|							|
@@ -37,6 +37,7 @@ La première question à se poser : De quoi est compose un forum ? C'est compos�
 	|Rangs						|
 	|			Catégories		|
 	+---------------------------+
+```
 	
 En effet, le forum de discussion va gérer des utilisateurs, c'est une entité propre à notre forum.
 
