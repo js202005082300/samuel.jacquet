@@ -1,5 +1,5 @@
 # [AIDE - programmation orientée-objet](https://youtu.be/5j5z9BJCAW8)
-@https://github.com/jasonchampagne
+@https://github.com/jasonchampagne/FormationVideo/tree/master/Ressources/Aide
 
 ## Paradigme = façon de coder. 
 
