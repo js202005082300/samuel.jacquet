@@ -25,6 +25,8 @@ Le problème de base est divisé en sous-partie. Exemple : Lorsqu'on développe 
 
 La première question à se poser : De quoi est compose un forum ? C'est composé d'entités et de concepts : Utilisateur, Sujet, Message, Rangs, Catégories.
 
+![Forum de discussion](poo/Image1.png)
+
 	+---------------------------+
 	|Forum de discussion		|
 	|							|
@@ -47,6 +49,8 @@ Dans un forum, il y aura des catégories dans lequel il y aura des sujets que le
 Par exemple, on pourrait avoir une classe qui va gérer la messagerie du Forum, une autre classe qui gérerais les paramètres du Forum ou encore une autre classe totalement isoler qui ne me soit pas une entité propre. Ou encore une classe qui afficherait le nombre de messages par page. Ainsi "Utilisateur, Sujet, Message, Rangs, Catégories" ne sont pas forcément des entités propres mais peut être simplement des concepts, des idées.
 
 ### Créer un modèle, une classe User.
+
+![Forum de discussion - Classe Utilisateur](poo/Image2.png)
 
 	Forum de discussion
 	+---------------------------------------------------+  +
@@ -129,6 +133,8 @@ Ecrire un langage est loin d'être compliqué. Ce sont les notions, les concepts
 
 L'héritage est un concept de la programmation objet, écrit avec une syntaxe différente suivant le langage de programmation. 
 
+![Principe de l'héritage - 1](poo/Image3.png)
+
 	+-------------------------------------------+
 	| Gestion des objets dans un jeu RPG		|
 	| 											|
@@ -149,6 +155,8 @@ La Gestion des Objets dans un jeu RPG (jeu de rôle) est une manière de schéma
 En PO, il n'y a pas forcément une seule classe pour les objets. On peut optimiser, décomposer ce qu'est un objet. L'objet est une classe qui se composé de sa propre structure, son propre comportement.
 
 Grace à l'héritage, on peut créer des objets spéciaux. C’est-à-dire des objets qui possède tous cette classe item dans sa structure et son comportement, avec des choses éventuellement en plus. On crée donc des classes en plus (Weapon, Cunsumable, Armor). Ces classes auront tous les attributs/variables que possède la classe item mais peut être avec d'autres choses. Par exemple, on peut mettre une puissance d'attaque sur Weapon mais pas sur Cunsumable ou Armor ou le simple Item de base. C'est comme ça qu'on peut encore créer d'autres classes, une classe d'arme magique MagicWeapon, c’est-à-dire une sorte d'arme mais avec des attributs en plus et un comportement supplémentaire (des méthodes en plus).
+
+![Principe de l'héritage - 2](poo/Image4.png)
 
 	+-------------------------------------------+
 	| Gestion des objets dans un jeu RPG		|
@@ -172,13 +180,15 @@ Weapon est une classe fille de base pour la classe Item mais une classe mère de
 
 Voilà qui définit un autre avantage de la programmation objet qui ne serait pas possible de faire en procédurale.
 
-	+---------------------------------------------------------------------------+
-	| Avantages de la programmation objet.										|
-	| 	La possibilité de divisé le problème en entités, en classes.			|
-	| 	La possibilité de spécialiser les classes avec le principe d'héritage.	|
-	+---------------------------------------------------------------------------+
+	+-----------------------------------------------------------------------------------+
+	| Avantages de la programmation objet.												|
+	| 	La possibilité de divisé le problème en entités, en classes.					|
+	| 	La possibilité de spécialiser les classes avec le principe d'héritage.			|
+	+-----------------------------------------------------------------------------------+
 	
 ### Principe de Polymorphisme (= généricité du code).
+
+![Polymorphisme dans un jeu](poo/Image5.png)
 
 	+-------------------------------------------------------+
 	| 			Polymorphisme dans un jeu					|
@@ -212,6 +222,8 @@ Le principe, c'est de redéfinir cette méthode en disant comment le véhicule s
 Donc, on a une seule méthode de base "abstraite" que l'on définit concrètement dans chacune des classes filles. Au moment où dans le jeu vidéo, on va vouloir faire déplacer notre véhicule. Notre programme sera exactement quelle méthode utiliser. En effet, on génère un code abstrait avec des parties concrètes qui ensuite à l'exécution de notre programme de jeux, adoptera le bon comportement. Un navire ne se déplacera pas en volant sauf si on lui attribue une classe fille pour qu'il vole.
 
 ### Principe de la réutilisation du code
+
+![Ré-utilisation du code](poo/Image6.png)
 
 	+---------------------------------------------------------------------------------------+
 	|									Ré-utilisation du code								|
