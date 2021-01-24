@@ -152,7 +152,7 @@ Restaurer le dépôt dans l'état du commit identifié (TimeMachine).
 
     git revert <id_commit>
 
-# Le dépôt, c'est équivalent à un arbre avec branches ...
+# Le dépôt, c'est équivalent à un arbre
 
 Master, c'est la branche principale du dépôt. 
 
