@@ -34,9 +34,9 @@ p {
 
 body {
 	/* font-family: 'learning_curve', 'Trebuchet MS', 'serif'; */
-    background-color: #0E8858;
-	color: #1B0E88;
-	background: url("images/fond05.jpg") scroll repeat top right;
+    background-color:;
+	color: #883f0e;
+	background: rgb(240, 240, 240) scroll repeat top right;
 	margin: 70px auto;
     width: 80%;
 }
