@@ -136,7 +136,7 @@ Ecrire un langage est loin d'être compliqué. Ce sont les notions, les concepts
 L'héritage est un concept de la programmation objet, écrit avec une syntaxe différente suivant le langage de programmation. 
 
 ![Principe de l'héritage - 1](poo/Image3.png)
-
+<!-- 
 	+-------------------------------------------+
 	| Gestion des objets dans un jeu RPG		|
 	| 											|
@@ -151,7 +151,7 @@ L'héritage est un concept de la programmation objet, écrit avec une syntaxe di
 	| MagicWeapon								|
 	| 											|			
 	+------------------------------ HERITAGE ---+
- 
+  -->
 La Gestion des Objets dans un jeu RPG (jeu de rôle) est une manière de schématiser un personnage avec plusieurs classes. Il peut évoluer avec des niveaux, utiliser des objets, ramasser des objets, tuer des monstres, faire des donjons, etc.
 
 En PO, il n'y a pas forcément une seule classe pour les objets. On peut optimiser, décomposer ce qu'est un objet. L'objet est une classe qui se composé de sa propre structure, son propre comportement.
@@ -159,7 +159,7 @@ En PO, il n'y a pas forcément une seule classe pour les objets. On peut optimis
 Grace à l'héritage, on peut créer des objets spéciaux. C’est-à-dire des objets qui possède tous cette classe item dans sa structure et son comportement, avec des choses éventuellement en plus. On crée donc des classes en plus (Weapon, Cunsumable, Armor). Ces classes auront tous les attributs/variables que possède la classe item mais peut être avec d'autres choses. Par exemple, on peut mettre une puissance d'attaque sur Weapon mais pas sur Cunsumable ou Armor ou le simple Item de base. C'est comme ça qu'on peut encore créer d'autres classes, une classe d'arme magique MagicWeapon, c’est-à-dire une sorte d'arme mais avec des attributs en plus et un comportement supplémentaire (des méthodes en plus).
 
 ![Principe de l'héritage - 2](poo/Image4.png)
-
+<!-- 
 	+-------------------------------------------+
 	| Gestion des objets dans un jeu RPG		|
 	| 											|
@@ -174,8 +174,8 @@ Grace à l'héritage, on peut créer des objets spéciaux. C’est-à-dire des o
 	| |											|
 	| MagicWeapon								|
 	| 	(Classe fille de "Weapon")				|			
-	+------------------------------ HERITAGE ---+
-
+	+------------------------------ HERITAGE ---+ 
+-->
 L'arme n'est pas une armure, l'arme n'est pas un consommable mais ils sont tous déjà basé sur un même modèle.
 
 Weapon est une classe fille de base pour la classe Item mais une classe mère de MagicWeapon.
@@ -191,7 +191,7 @@ Voilà qui définit un autre avantage de la programmation objet qui ne serait pa
 ### Principe de Polymorphisme (= généricité du code).
 
 ![Polymorphisme dans un jeu](poo/Image5.png)
-
+<!-- 
 	+-------------------------------------------------------+
 	| 			Polymorphisme dans un jeu					|
 	|														|
@@ -204,7 +204,7 @@ Voilà qui définit un autre avantage de la programmation objet qui ne serait pa
 	| Ship				Hauter				Plane			|
 	|	move()				move()				move()		|
 	+-------------------------------------------------------+
- 
+  -->
 #### Classe abstraite ou Interface.
 
 Ce qui est intéressant, c'est que nous allons avoir un véhicule mais nous n'allons jamais en créer dans notre exemple de jeu. On ne créera jamais d'objet, d'instance de cette classe véhicule. C'est ce que l'on appelle une classe abstraite ou interface.
@@ -226,7 +226,7 @@ Donc, on a une seule méthode de base "abstraite" que l'on définit concrètemen
 ### Principe de la réutilisation du code
 
 ![Ré-utilisation du code](poo/Image6.png)
-
+<!-- 
 	+---------------------------------------------------------------------------------------+
 	|									Ré-utilisation du code								|
 	|																						|
@@ -245,7 +245,7 @@ Donc, on a une seule méthode de base "abstraite" que l'on définit concrètemen
 	| |										|			| méthodes et/ou redéfintions	|	|
 	| +-------------------------------------+			+-------------------------------+	|
 	+---------------------------------------------------------------------------------------+
- 
+-->
 Par exemple sur Python, on utilise parfois du code que nous n'avons pas développez, c’est-à-dire les modules natifs de Python ou des classes de Python (Quand on utilise un entier, on crée une instance de Integer).
 
 On peut prendre un code tiers (bibliothèque, package, module, …) qui contient différentes classes (Editor, Tool, etc.) créé par des développeurs. 
