@@ -61,7 +61,7 @@ Par exemple, on pourrait avoir une classe qui va gérer la messagerie du Forum, 
 	| STRUCTURE (attributs)	| COMPORTEMENTS (méthodes)	|  |
 	+-----------------------+---------------------------+  |
 	| user_name				| postMessage()				|  |
-	| user_email			| editMessage()				|  |--> CLASSE
+	| user_email			| editMessage()				|  |-- > CLASSE
 	| user_registration		| profile()					|  |
 	| user_birthdate		| editProfile()				|  |
 	| user_posts			| register()				|  |
