@@ -27,8 +27,8 @@ Le problème de base est divisé en sous-partie. Exemple : Lorsqu'on développe 
 La première question à se poser : De quoi est compose un forum ? C'est composé d'entités et de concepts : Utilisateur, Sujet, Message, Rangs, Catégories.
 
 ![Forum de discussion](poo/Image1.png)
-
-	<!-- +---------------------------+
+<!-- 
+	+---------------------------+
 	|Forum de discussion		|
 	|							|
 	|	Utilisateur				|
@@ -36,7 +36,8 @@ La première question à se poser : De quoi est compose un forum ? C'est compos�
 	|		Message				|
 	|Rangs						|
 	|			Catégories		|
-	+---------------------------+ -->
+	+---------------------------+
+-->
 	
 En effet, le forum de discussion va gérer des utilisateurs, c'est une entité propre à notre forum.
 
