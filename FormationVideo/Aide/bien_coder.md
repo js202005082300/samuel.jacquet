@@ -8,11 +8,19 @@
 + Se conformer à des conventions (et s’y tenir) 
 
 1. Travailler avec des tabulations “en 4/8 colonnes” ou des espaces ;
+
 1. Nomage des variables :
+
     1. PascalCase = MaVariable (ex : langage Pascal, objet en PHP)
     1. camelCase = maVariable (ex : langage C, procédure en PHP)
     1. snake_case = ma_variable (ex : langage Python)
-1. Longueur des noms des variables (Le nom des variables doit être suffisant pour comprendre sans commentaire : “listeEtudiantAdmisAuBac” ou encore “Int tabEtudiantsAdmisBac[] ;”
+
+1. Longueur des noms des variables (Le nom des variables doit être suffisant pour comprendre sans commentaire : 
+
+    "listeEtudiantAdmisAuBac" ou encore "Int tabEtudiantsAdmisBac[ ];"
+
 1. Faire confiance à son code (ne pas attendre de nouvelle version de librairies pour sortir son code) ;
-1. Utiliser la documentation (manuel PHP, C++ référence, <language> doc, javascript doc, javascript manual reference) ;
+
+1. Utiliser la documentation (manuel PHP, C++ référence, /<language/> doc, javascript doc, javascript manual reference) ;
+
 1. Coder, coder et coder encore !
