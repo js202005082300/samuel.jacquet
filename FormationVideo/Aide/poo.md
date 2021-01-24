@@ -1,4 +1,5 @@
 # [AIDE - programmation orientée-objet](https://youtu.be/5j5z9BJCAW8)
+@jasonchampagne
 
 ## Paradigme = façon de coder. 
 
