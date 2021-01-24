@@ -1,0 +1,39 @@
+AIDE - Visual Studio Code
+10-01-21
+
+Editeur, Environnement de développement, gratuite, en partie Open Source et multiplateforme.
+Installer par défaut, pas besoin de cocher la variable PATH.
+
+ctrl +				agrandir l'interface.
+ctrl -				réduire l'interface.
+
+ctrl+Shift+X		chercher "French dans les extensions".
+    				Install -> Module linguistique français pour VS Code
+
+En bas à droite
+					UTF-8
+					Taille des tabulations:4
+
+Tab					avance
+Maj+Tab				recule
+
+Alt					curseur multiple
+	
+Ctrl+, 				paramètre
+					Modifier dans settings.json
+Maj+Alt+C			C:\Users\sam\AppData\Roaming\Code\User\settings.json
+
+ctrl+K ctrl+T		Thème de couleur
+					Install -> Tomorrow_Night_Eighties Theme
+
+
+ctrl+Alt+flèche		Ajouter curseur en dessous ou au-dessus
+
+ctrl+Maj+ù			Terminal
+
+De plus,
+	Alt+flèche			Monter, désecendre une ligne.
+	ctrl+H				Remplacer, ctrl+Alt+Enter
+	Ctrl+K ctrl+C		Commenter
+	Click+F12			Retourne à la fonction en programmation.		
+	Tab+!				Code source Html
