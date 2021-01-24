@@ -9,7 +9,7 @@
 
 + Hébergement au près d'un fournisseur = contrat qui nous lient à l'entreprise qui nous fournit un serveur distant, un pc distant. On envoie notre contenu de site web à ce serveur distant au travers une adresse IP masqué par un nom de domaine (= une adresse avec une extension .game, .fr, .be). L'adresse du site web devient un nom de domaine accessible partout sur internet.
 
-## Type d’hébergement
+## Types d’hébergements
 
 + Mutualisé = colocation de serveur. Le moins coûteux. Moins puissant. Partage de ressources matériels ( de ressources entre plusieurs personnes. Plusieurs dizaine, centaine de personnes sur un même serveur. L’hébergeur initialise notre hébergement (sécurité, configuration). L'utilisateur déploient les fichiers du site web (PHP, python, html)
 
