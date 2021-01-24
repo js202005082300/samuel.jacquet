@@ -53,7 +53,7 @@ Par exemple, on pourrait avoir une classe qui va gérer la messagerie du Forum, 
 ### Créer un modèle, une classe User.
 
 ![Forum de discussion - Classe Utilisateur](poo/Image2.png)
-
+<!-- 
 	Forum de discussion
 	+---------------------------------------------------+  +
 	| 				CLASSE Utilisateur  				|  |
@@ -69,7 +69,7 @@ Par exemple, on pourrait avoir une classe qui va gérer la messagerie du Forum, 
 	| ...					| logout()					|  |
 	| 						| ...						|  |
 	+-----------------------+---------------------------+  +
- 
+  -->
 On prend l'exemple d'une de ces classes et on crée un modèle.
 Classe = modèle de conception (calque, moule). Un humain est forme sur un modèle génétique. 
 
