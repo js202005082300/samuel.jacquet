@@ -210,5 +210,4 @@ Si on est en UEFI, en GPT, il faudra bien cocher, démarrer sur notre clé en mo
 
 Si on essaye d'installer un mode BIOS sur un UEFI ou l'inverse, le système ne bootera pas. Le système ne pourrait pas être reconnu au redémarrage, etc.
 
-
 Lorsqu'on crée une clé de boot, ça reste un minimum technique. Avant 2010, on n'a pas forcément de UEFI, ni de "Secure boot". Ça peut poser un problème plus sur Windows que sur Linux. On a vu ça avec Windows 8. C'est assez ancien et ça dépend du matériel, on a des carte mère différentes, de disques durs différents qui partionner ou formater différemment selon les cas. Il faut ainsi voir ce que l'on a comme matériel pour faire l'installation 
