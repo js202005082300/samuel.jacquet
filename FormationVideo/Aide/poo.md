@@ -1,5 +1,4 @@
-AIDE - programmation orientée-objet
-https://youtu.be/5j5z9BJCAW8
+[AIDE - programmation orientée-objet](https://youtu.be/5j5z9BJCAW8)
 
 # Programmation orientée-objet
 

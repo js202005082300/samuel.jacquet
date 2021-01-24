@@ -1,4 +1,4 @@
-# AIDE - écrire un Makefile (Make)
+# [AIDE - écrire un Makefile](https://www.youtube.com/watch?v=-riHEHGP2DU&list=PLrSOXFDHBtfEwFMZ1YIXgUqOFODGyo7tB&index=11)
 24-01-21
 
 Un Makefile est simplement un fichier que nous allons écrire et qui servira pour ceux qui utilisent des langages compilés comme le C ou le C++ afin de faciliter le développement sur des projets conséquents.
@@ -26,7 +26,9 @@ Pour Windows, c'est différent, il n'est pas installé en natif, il n'existe pas
 
 Il faut l'installer.
 
-* Pour cela il faut se rendre sur gnuwin32.sourceforge.net/packages/make.htm
+* Pour cela il faut se rendre ici:
+
+    gnuwin32.sourceforge.net/packages/make.htm
 
 Cela pour partir sur la bonne source parce qu'il y a plusieurs moyens d'avoir l'outil Make sur Windows pour éviter les problèmes à l'installation est à l'utilisation.
 
