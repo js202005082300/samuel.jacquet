@@ -64,9 +64,9 @@ Monter, désecendre une ligne.
 	
 	Alt+flèche
 	
-Remplacer, ctrl+Alt+Enter
+Remplacer,
 	
-	ctrl+H
+	ctrl+H (valiser : ctrl+Alt+Enter)
 
 Commenter
 
