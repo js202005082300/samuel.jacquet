@@ -183,6 +183,7 @@ Voilà qui définit un autre avantage de la programmation objet qui ne serait pa
 	+---------------------------------------------------------------------------+
 	
 ### Principe de Polymorphisme (= généricité du code).
+
 	+-------------------------------------------------------+
 	| 			Polymorphisme dans un jeu					|
 	|														|
@@ -215,6 +216,7 @@ Le principe, c'est de redéfinir cette méthode en disant comment le véhicule s
 Donc, on a une seule méthode de base "abstraite" que l'on définit concrètement dans chacune des classes filles. Au moment où dans le jeu vidéo, on va vouloir faire déplacer notre véhicule. Notre programme sera exactement quelle méthode utiliser. En effet, on génère un code abstrait avec des parties concrètes qui ensuite à l'exécution de notre programme de jeux, adoptera le bon comportement. Un navire ne se déplacera pas en volant sauf si on lui attribue une classe fille pour qu'il vole.
 
 ### Principe de la réutilisation du code
+
 	+---------------------------------------------------------------------------------------+
 	|									Ré-utilisation du code								|
 	|																						|

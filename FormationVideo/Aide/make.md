@@ -639,34 +639,42 @@ On voit que l'on a un problème à la compilation, on décide donc d'utiliser le
     $(EXEC) : $(OBJ)
         $(CC) -o $(EXEC) $(OBJ)
 
-$(OBJ) est notre cible et nous allons la remplacer par $@. 
+$(OBJ) est notre cible et nous allons la remplacer par $@.
+
 ´´´txt
-+-------------------------------+---------------------------+
-|%.o : %.c                      | %.o : %.c                 |
-|   $(CC) -o $(OBJ) -c $(SRC)   |   $(CC) -o $@ -c $(SRC)   |
-+-------------------------------+---------------------------+
+    +-------------------------------+---------------------------+
+    |%.o : %.c                      | %.o : %.c                 |
+    |   $(CC) -o $(OBJ) -c $(SRC)   |   $(CC) -o $@ -c $(SRC)   |
+    +-------------------------------+---------------------------+
 ´´´
+
 $(SRC) est la première dépendance donc la source en fonction. Donc si on a main.o, on va pas essayer de le créer avec player.c. Ca risque d'être problématique, on va le créer avec la variable de même nom, main.c, avec une autre extension. On met à la place $<. Ça permettra de gérer au mieux la priorité de la création des fichiers objets.
+
 ´´´txt
-+-------------------------------+---------------------------+
-|%.o : %.c                      | %.o : %.c                 |
-|   $(CC) -o $@ -c $(SRC)       |   $(CC) -o $@ -c $<       |
-+-------------------------------+---------------------------+
+    +-------------------------------+---------------------------+
+    |%.o : %.c                      | %.o : %.c                 |
+    |   $(CC) -o $@ -c $(SRC)       |   $(CC) -o $@ -c $<       |
+    +-------------------------------+---------------------------+
 ´´´
+
 Au niveau de l'exécutable, comme les $(EXEC) sont identique, on peut remplacer la cible de la commande par $@.
+
 ´´´txt
-+-------------------------------+---------------------------+
-|$(EXEC) : $(OBJ)               | $(EXEC) : $(OBJ)          |
-|   $(CC) -o $(EXEC) $(OBJ)     |   $(CC) -o $@ $(OBJ)      |
-+-------------------------------+---------------------------+
+    +-------------------------------+---------------------------+
+    |$(EXEC) : $(OBJ)               | $(EXEC) : $(OBJ)          |
+    |   $(CC) -o $(EXEC) $(OBJ)     |   $(CC) -o $@ $(OBJ)      |
+    +-------------------------------+---------------------------+
 ´´´
+
 Pour la liste des objets (main.o, player.o, etc), ce n'est plus dollar inférieur à mais dollar accent circonflexe $^. C'est la liste des dépendances.
+
 ´´´txt
-+-------------------------------+---------------------------+
-|$(EXEC) : $(OBJ)               | $(EXEC) : $(OBJ)          |
-|   $(CC) -o $@ $(OBJ)          |   $(CC) -o $@ $^          |
-+-------------------------------+---------------------------+
+    +-------------------------------+---------------------------+
+    |$(EXEC) : $(OBJ)               | $(EXEC) : $(OBJ)          |
+    |   $(CC) -o $@ $(OBJ)          |   $(CC) -o $@ $^          |
+    +-------------------------------+---------------------------+
 ´´´
+
 Cela nous donne :
 
     makefile
