@@ -66,7 +66,7 @@ Monter, désecendre une ligne.
 	
 Remplacer,
 	
-	ctrl+H (valiser : ctrl+Alt+Enter)
+	ctrl+H (valider : ctrl+Alt+Enter)
 
 Commenter
 
