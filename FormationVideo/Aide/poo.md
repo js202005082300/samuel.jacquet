@@ -182,11 +182,9 @@ Weapon est une classe fille de base pour la classe Item mais une classe mère de
 
 Voilà qui définit un autre avantage de la programmation objet qui ne serait pas possible de faire en procédurale.
 
-	+-----------------------------------------------------------------------------------+
-	| Avantages de la programmation objet.												|
-	| 	La possibilité de divisé le problème en entités, en classes.					|
-	| 	La possibilité de spécialiser les classes avec le principe d'héritage.			|
-	+-----------------------------------------------------------------------------------+
+	Avantages de la programmation objet.
+		La possibilité de divisé le problème en entités, en classes.
+		La possibilité de spécialiser les classes avec le principe d'héritage.
 	
 ### Principe de Polymorphisme (= généricité du code).
 
