@@ -1,7 +1,7 @@
 # [AIDE - héberger son site en ligne](https://www.youtube.com/watch?v=mXVacXSTns8&list=PLrSOXFDHBtfEwFMZ1YIXgUqOFODGyo7tB&index=14)
 @https://github.com/jasonchampagne/FormationVideo/tree/master/Ressources/Aide
 
-## Hébergement
+## Hébergements
 
 + Auto-hebergement = ma machine devient un serveur d’accès. Les internautes se connectent via l'adresse IP de mon ordinateur pour accéder à mon site web. Besoin d'auto-configurer et de sécuriser.
 
