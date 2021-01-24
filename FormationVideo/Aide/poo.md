@@ -8,7 +8,7 @@ Par exemple :
 * Programmation procédurale = décomposition du problème par rapport à des fonctions (factorisation de code).
 * Programmation oriente objet (POO) - programmation objet.
 
-Dans un paradigme  -> Problème de base : (paramètres) -> suite d'instructions => Résultat.
+Dans un paradigme  -> Problème de base : (paramètres) -> suite d'instructions => Résultat.c
 
 ## Programmation oriente objet.
 
