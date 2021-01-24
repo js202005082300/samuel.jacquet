@@ -54,7 +54,7 @@ Au niveau du fonctionnement des logiciels.
 
 Lancer, démarrer Rufus.
 
-1. Sélectionner le périphérique
+* Sélectionner le périphérique
 
 ![Périphérique](rufus/Image1.png)
  
@@ -66,7 +66,7 @@ Vérifier que la lettre afficher dans la périphérie correspond bien à notre c
 
 Ensuite un petit bouton de sélection pour sélectionner le fichier ISO.
 
-1. Système de Partition
+* Système de Partition
 
 ![Schéma&Système](rufus/Image3.png)
  
@@ -124,7 +124,7 @@ Il permet par exemple de récupérer des données corrompues sur un disque. GPT 
 
 On sait comment choisir maintenir même si l'idéal est de choisir GPT partout. Si par exemple, on a acheté un vieux PC à l'époque et que tout est déjà en MBR, ce n'est pas grave. Il n'y a pas l'obligation de formater le disque pour changer le type de partition en GPT parce qu'il va falloir sauvegarder nos données, etc. Voilà ce n'est pas forcément très pratique.
 
-1. Vérifier le type de partition
+* Vérifier le type de partition
 
 Pour vérifier le type de partition. Il y a DiskPart et Gparted sur Linux.
 
@@ -144,13 +144,13 @@ A coté du type de partition, on devrait pouvoir vérifier le type de partition.
 
 L'idéal pour résumer, c'est le GPT parce que le MBR n'est pas compatible partout. Du moins ça présente pas mal d'inconvénient par rapport au GPT. 
 
-1. Nom du volume
+* Nom du volume
 
 ![nomVolume](rufus/Image10.png)
  
 Le nom du volume peut être changé. On peut mettre ce que l'on veut.
 
-1. Type de fichier
+* Type de fichier
 
 ![systèmeFichier](rufus/Image11.png)
  
@@ -160,7 +160,7 @@ Le NTFS, ce n'est que pour du Windows. Normalement si on propose un ISO Linux, i
 
 Il est recommandé de virer les données que l'on a sur la clé USB avant de s'en servir. 
 
-1. Démarrer
+* Démarrer
 
 ![démarrer](rufus/Image12.png)
  
