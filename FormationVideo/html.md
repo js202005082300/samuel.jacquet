@@ -213,91 +213,91 @@
 ## 013 - structurer page web
 
 ```html
-\<body\> 
-    \<div\>
-        \<p\>
-            \<a\>\</a\>
-        \</p\>
-        \<p\>
-            \<span\>\</span\>
-        \</p\>
-    \</div\>
-\</body\>
+<body> 
+    <div>
+        <p>
+            <a></a>
+        </p>
+        <p>
+            <span></span>
+        </p>
+    </div>
+</body>
 ```
 ```html
-\<body\> 
-	\<main\>\</main\>
-	\<div\>\</div\>
-	\<div\>\</div\>
-\</body\>
+<body> 
+	<main></main>
+	<div></div>
+	<div></div>
+</body>
 ```
 ```html
-\<body\>
-    \<h1\>\</h1\>
-	\<section\>
-        \<h1\>\</h1\>
-        \<p\>\</p\>
-    \</section\>
-	\<section\>
-        \<h1\>\</h1\>
-        \<p\>\</p\>
-	\</section\>
-\</body\>
+<body>
+    <h1></h1>
+	<section>
+        <h1></h1>
+        <p></p>
+    </section>
+	<section>
+        <h1></h1>
+        <p></p>
+	</section>
+</body>
 ```
 ```html
-\<body\>
-    \<main\>
-        \<header\>
-            \<h1\>Mon site\</h1\>
-        \</header\>
+<body>
+    <main>
+        <header>
+            <h1>Mon site</h1>
+        </header>
 
-        \<div class="gallery"\>
+        <div class="gallery">
         
-        \</div\>
+        </div>
 
-        \<nav\>
-            \<ul\>
-                \<li\>\<a href="#"\>Aceuil\</a\>\</li\>
-                \<li\>\<a href="#"\>Articles\</a\>\</li\>
-                \<li\>\<a href="#"\>Forum\</a\>\</li\>
-                \<li\>\<a href="#"\>Contact\</a\>\</li\>
-            \</ul\>
-        \</nav\>
+        <nav>
+            <ul>
+                <li><a href="#">Aceuil</a></li>
+                <li><a href="#">Articles</a></li>
+                <li><a href="#">Forum</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
 
-        \<p\>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, deserunt ullam perferendis temporibus voluptatibus.\</p\>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, deserunt ullam perferendis temporibus voluptatibus.</p>
 
-        \<section\>
-            \<nav\>
-                \<ul\>
-                    \<li\>\<a href="#"\>Premier pas\</a\>\</li\>
-                    \<li\>\<a href="#"\>Partie\</a\>\</li\>
-                    \<li\>\<a href="#"\>Conclusion\</a\>\</li\>
-                \</ul\>
-            \</nav\>
-        \</section\>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="#">Premier pas</a></li>
+                    <li><a href="#">Partie</a></li>
+                    <li><a href="#">Conclusion</a></li>
+                </ul>
+            </nav>
+        </section>
 
-        \<section\>
-            \<h1\>Titre de section\</h1\>
-            \<p\>\</p\>
-        \</section\>
+        <section>
+            <h1>Titre de section</h1>
+            <p></p>
+        </section>
 
-        \<article\>
-            \<header\>
-                \<h2\>Titre d'article\</h2\>
-            \</header\>
-            \<p\>Le contenu de l'article ...\</p\>
-            \<footer\>
-                \<p\>Ce contenu est rédigé par \<address\>Jason\</address\>\</p\>
-            \</footer\>
-        \</article\>
+        <article>
+            <header>
+                <h2>Titre d'article</h2>
+            </header>
+            <p>Le contenu de l'article ...</p>
+            <footer>
+                <p>Ce contenu est rédigé par <address>Jason</address></p>
+            </footer>
+        </article>
 
-        \<aside\>
-            \<p\>Lorem ipsum dolor sit amet, consectetur \<span class="text-red"\>adipisicing elit\</span\>. Corporis, sed velit officiis.\</p\>
-        \</aside\>
+        <aside>
+            <p>Lorem ipsum dolor sit amet, consectetur <span class="text-red">adipisicing elit</span>. Corporis, sed velit officiis.</p>
+        </aside>
 
-        \<footer\>
-                \<p\>Copyright &copy; 2018\</p\>
-        \</footer\>
-    \</main\>
-\</body\>
+        <footer>
+                <p>Copyright &copy; 2018</p>
+        </footer>
+    </main>
+</body>
 ```
