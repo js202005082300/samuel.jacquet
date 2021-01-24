@@ -235,7 +235,7 @@ Donc, on a une seule méthode de base "abstraite" que l'on définit concrètemen
 	| | (bibliothèque, package, module, ...)|	|											|
 	| | 									|	|		+-------------------------------+	|
 	| | 	Editor							|	|		| 		UserInterface			|	|
-	| |					Interface ----------|---+-----> |								|	|
+	| |					Interface ----------|---+---- > |								|	|
 	| |		Tool							|			| Possède toute la strucure +	|	|
 	| |										|			| comportement de la classe		|	|
 	| |		Document						|			| 		Interface				|	|
@@ -292,6 +292,3 @@ Pour tel partie de ce projet, on travaille en objet et pour tel autre partie ass
 La programmation objet n'est pas toujours la meilleure façon de faire. C'est juste une autre manière de concevoir, de penser la programmation avec tout des avantages que l'on ne retrouve pas en programmation procédurales mais dans de nombreuses circonstances, programmer en procédurales fera gagner plus en performance, sera plus rapide, sera plus pratique, sera plus lisible.
 
 Il faut réfléchir lorsqu'on travaille sur un projet à manier l'ensemble de manière astucieuse, de manière intelligente. On aura toujours besoin de procédurale car déjà la méthode d'un objet est déjà une fonction.
-
-
-
