@@ -28,6 +28,12 @@ h1, h2 {
 	text-align: left;
 }
 
+h4 {
+	text-align: left;
+	font-size: 0.85em;
+	
+}
+
 p {
 
 }
@@ -36,7 +42,7 @@ body {
 	/* font-family: 'learning_curve', 'Trebuchet MS', 'serif'; */
     background-color:;
 	color: #883f0e;
-	background: rgb(240, 240, 240) scroll repeat top right;
+	background: #DDD scroll repeat top right;
 	margin: 70px auto;
     width: 80%;
 }
