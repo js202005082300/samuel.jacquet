@@ -1,119 +1,54 @@
 /*
-style.css
----------
 Par Samuel Jacquet
-Màj : 28-11-20
+Màj : 07-02-21
 */
 
-#logo{/**/}
-
-@font-face {
+#logo{ }
+@font-face{
 	font-family:'learning_curve';
-	src: url('polices/learning_curve/learning_curve_regular_ot_tt.ttf') format('truetype'),
-		 url('polices/learning_curve/learning_curve_regular_ot_ps.otf') format('opentype');
+	src:url('polices/learning_curve/learning_curve_regular_ot_tt.ttf') format('truetype'),
+		url('polices/learning_curve/learning_curve_regular_ot_ps.otf') format('opentype');
 }
-
-* {
-
+h1,h2{
+	font-size:2em;
+	font-weight:normal;
+	text-align:left;
 }
-
-/* selecteurs block */
-h1, h2 {
-	color:;
-	font-size: 2em;
-	font-family:;
-	font-style:;
-	font-weight: normal;
-	text-decoration:;
-	text-align: left;
+h4{font-size:0.80em;}
+body,main{
+	background-color:#DDD;
+	margin:70px auto;
+	width:80%;
 }
-
-h4 {
-	text-align: left;
-	font-size: 0.85em;
-	
+.bloc-personnel{width:320px;background-color:#000;}
+.photo{float:left;}
+.contact{float:right;width:200px;}
+section{clear:both;}
+nav a{
+	display:inline-block;
+	padding:8px 16px;
+	margin:0px;
+	color:#000;
+	background-color:#CCC;
+	border:2px solid #FFF;
 }
-
-p {
-
+a{
+    color:#00F;
+	font-size:1.0em;
+	text-decoration:none;
 }
-
-body {
-	/* font-family: 'learning_curve', 'Trebuchet MS', 'serif'; */
-    background-color:;
-	color: #883f0e;
-	background: #DDD scroll repeat top right;
-	margin: 70px auto;
-    width: 80%;
+summary:hover,nav a:hover{background-color:rgb(107,178,99);border-color:#000;color:#FFF}
+a:hover{color:rgb(107,178,99);}
+summary{
+	background-color:#CCC;
+	border:2px solid #FFF;
+	width:100px;
+	padding:8px 16px;
+	margin:0px;
 }
-
-nav {
-    color:;
-	/*background-color: rgb(255,0,0);
-    background-color: rgba(255,0,0,0.3);*/
+footer{
+	text-align:center;
+    border-top:2px #CCC solid;
+    font-size:.8em;
 }
-
-footer {
-	/* background: url("images/chemin.jpg") scroll no-repeat top right; */
-	/* opacity: 0.2; */
-	text-align: center;
-    border-top: 2px #d5d5d5 solid;
-    font-size: .8em;
-	/* border: 2px #000 solid; */
-}
-
-/* selecteurs inline */
-strong, em {
-	font-style: normal;
-}
-
-mark {
-	color:;
-	background:;
-}
-
-a {
-    color:;
-	font-size: 1.0em;
-	text-decoration: none;
-}
-
-/* Code */
-
-.shell-green {
-	color: #4E9A06;
-}
-
-.shell-blue {
-	color: #3465A4;
-}
-
-.shell-turquoise {
-	color: #06989A;
-}
-
-pre {
-	white-space:pre-wrap;
-	overfl ow-x:auto;
-	tab-width: 4;
-}
-
-code.linux{
-	font-family: monospace;
-	font-size: .9em;
-	display: block;
-	width:500px;
-	border-radius: 10px;
-	padding: 5px;
-	color: #FFF;
-	background:#481036;
-}
-
-/* sélecteurs par attributs */
-.imageflottante {
-	float: left;
-}
-
-.sousImage {
-	clear: both;
-}
+strong,em{font-style:normal;}
