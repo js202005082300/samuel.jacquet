@@ -52,3 +52,8 @@ footer{
     font-size:.8em;
 }
 strong,em{font-style:normal;}
+.galery{
+	background-color:#EEE;
+	display:flex;
+	flex-wrap:wrap;
+}
