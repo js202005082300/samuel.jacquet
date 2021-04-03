@@ -7,4 +7,4 @@ chcp 65001
 git add *
 git commit -a -m "màj site"
 git push https://github.com/js202005082300/samuel.jacquet.github.io.git
-pause&exit
+exit
