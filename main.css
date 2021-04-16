@@ -16,7 +16,7 @@ h1,h2{
 }
 h4{font-size:0.80em;}
 body,main{
-	background-color:rgb(138, 184, 211);/*DDD*/
+	background-color:#DDD;
 	margin:70px auto;
 	width:80%;
 }
@@ -29,7 +29,7 @@ nav a{
 	padding:8px 16px;
 	margin:0px;
 	color:#000;
-	background-color:#CCC;
+	background-color:rgb(142, 219, 213);
 	border:2px solid #FFF;
 }
 a{
