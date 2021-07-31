@@ -9,7 +9,12 @@ Màj : 07-02-21
 	src:url('polices/learning_curve/learning_curve_regular_ot_tt.ttf') format('truetype'),
 		url('polices/learning_curve/learning_curve_regular_ot_ps.otf') format('opentype');
 }
-h1,h2{
+h1{
+	font-size:3em;
+	font-weight:normal;
+	text-align:left;
+}
+h2{
 	font-size:2em;
 	font-weight:normal;
 	text-align:left;
@@ -56,8 +61,4 @@ footer{
     font-size:.8em;
 }
 strong,em{font-style:normal;}
-iframe {
-	background-color:#EEE;
-	display:flex;
-	flex-wrap:wrap;
-}
+iframe {background-color:#EEE;display:flex;flex-wrap:wrap;}
