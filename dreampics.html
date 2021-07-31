@@ -11,28 +11,14 @@
 		<header>
 			<h1>DreamPics</h1>
 		</header>
-
-		<main>
-			<div>
-				<figure>
-					<img src="images/DreamPics_logo.jpg" alt="Logo Photographie DreamPics" id="logo">
-					<figcaption>Logo de la page Photographie Dream Pics</figcaption>
-				</figure>			
-			</div>
-
-			
-	
-			<p>Je suis une page de Photographe amateur !</p>
-	
-			<div>
-				<h2>Dream Pics, qu'est-ce que c'est ?</h2>
-				<ul>
-					<li>Une galerie des meilleurs photos.</li>
-					<li>Une communauté active.</li>
-					<li>Un calendrier des évenemments à venir.</li>
-				</ul>
-			</div>
-	
+		<!--
+		<div>
+			<figure>
+				<img src="images/DreamPics_logo.jpg" alt="Logo Photographie DreamPics" id="logo">
+				<figcaption>Logo de la page Photographie Dream Pics</figcaption>
+			</figure>			
+		</div>
+		-->	
 			<nav>
 				<a href="index.html">Acceuil</a>
 				<a href="#">Calendrier</a>
@@ -41,11 +27,36 @@
 				<a href="#">Contact</a>
 			</nav>
 			
+			<!-- Planning -->
+			<section id="planning">
+				<header><h2>Calendrier</h2></header>
+				<table>
+					<!--<caption>Calendrier d'évennements</caption>-->
+					<thead>
+						<tr>
+							<th>Date</th>
+							<th>Lieux</th>
+							<th>Evenement</th>
+							<th>affiche événementielle</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><time datetime="2021-07-30">Le 30 juillet 2021</time></td>
+							<td><address><a href="https://goo.gl/maps/h2FqH5nAxEqA6iLbA">Rue Martin Morimont, Ciney</a></address></td>
+							<td>13e Jogging du Congo</td>
+							<td><p><a href="images/13e_Jogging_du_Congo.jpg"><img src="images/13e_Jogging_du_Congo.jpg" alt="13e Jogging du Congo" title="Cliquez pour agrandir" width="50" height="auto"></a></p></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<!-- Galerie -->
 			<section id="galery">
 				<header><h2>Galerie photos</h2></header>
 				<div class="galery">
 
-					<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D2869200346677319%26id%3D1900744543522909&show_text=true&width=500" width="500" height="698" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+					<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FDreamersAndPics%2Fposts%2F2869271666670187&show_text=true&width=500" width="500" height="680" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 					<!--
 					<div class="galery-item">
 						<a href="images/ban-03-320.jpg"><img src="images/ban-03-320.jpg" alt="Ma photo de profil" title="Cliquez pour agrandir" width="100"></a>
@@ -54,13 +65,15 @@
 				</div>
 			</section>
 
+			<!-- Galerie -->
 			<section id="contact">
+				<header><h2>Contact</h2></header>
 				<address>
 					<p>
-					Samuel Jacquet, 33 ans<br>
-					<a href="https://m.me/1900744543522909">Lien Messenger (DreamPics)</a>
-					<a href="mailto:js201910271836@outlook.com">Envoyer un e-mail</a><br>
-					<a href="tel:+32476469866">Appeler</a>
+						DreamPics<br>
+						<a href="https://m.me/1900744543522909">Messenger (Fb)</a><br>
+						<a href="mailto:js201910271836@outlook.com">Envoyer un e-mail</a><br>
+						<a href="tel:+32476469866">Appeler</a>
 					</p>
 				</address>
 
@@ -69,7 +82,6 @@
 			<footer>
 				<p><a href="index.html">&laquo; Retour à l'acceuil</a></p>
 			</footer>
-		</main>
 	</body>
 </html>
 			<!-- Début Messenger Plug-in (à mettre au début de body) --
