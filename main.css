@@ -28,6 +28,19 @@ body,main{
 .bloc-personnel{width:320px;background-color:#000;}
 .photo{float:left;}
 .contact{float:right;width:200px;}
+/* --- grid & @media --- */
+/* .container{
+	display:grid;
+    grid-template-columns: auto minmax(150px, 300px);
+    grid-template-areas:"entete entete"
+                        "principal bare"
+                        "pied pied";
+}
+header{grid-area:entete;}
+main{grid-area:principal;}
+aside{grid-area:bare;}
+pied{grid-area:pied;} */
+/* ------------ */
 section{clear:both;}
 nav a{
 	display:inline-block;
